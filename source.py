@@ -1,10 +1,8 @@
-# Get user input
 import math
 
 user_input = input('MiniCalculator V1.0.0'
                    ' Say hello! ')
 
-# Check if the word "hello" is in the input
 if "hello" in user_input.lower():
     print("Hello there!")
 else:
@@ -13,7 +11,7 @@ else:
 
 user_input = input('Enter a command:'
                    '(subtraction,addition,multiplication,division,to the power of,radical...) ')
-
+#checks for the command you just entered.
 if "subtraction" in user_input.lower():
     subtraction1 = input('Give me number: ')
     subtraction2 = input('Give me another number: ')
@@ -43,13 +41,11 @@ if "division" in user_input.lower():
     print(result)
 
 if "radical" in user_input.lower():
-    # Get user input
+
     num = float(input("Give me number: "))
 
-    # Calculate the square root using the math.sqrt() function
     sqrt = math.sqrt(num)
 
-    # Print the result
     print("The square root of", num, "is", sqrt)
 
 
@@ -75,3 +71,5 @@ if 'yes' in answer.lower():
 else:
     input('Looks like an error may have occured with the calculation!or you just could not type yes properly.'
           ' You can close the application by simply pressing ENTER on your keyboard. ')
+#all of the variables for the numbers that are entered by the user,are written as subtraction1 and subtraction2.expect the variables of radical because
+#radical's code was completely different from the others.
